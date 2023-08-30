@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SLEMS</title>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">
+                <img src="img/logo2.png" class="logoimg" height="90px" style="position: relative;top: 10pt;">
+            </a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="features.html">Features</a></li>
+                
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <section class="logins"> 
+            <a href="login.html" class="action_btn">Login</a>
+             <a href="login.html" class="action_btn" style="background-color: #ff7a00;">SignUp</a>  </section>
 
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="features.html">Features</a></li>
+                
+                <li><a href="contact.html">Contact us</a></li>
+                <li>   <section class="logins">  
+                <a href="login.html" class="action_btn" style="border-radius:20px 0 0 20px ">Login</a>
+                 <a href="login.html" class="action_btn" style="border-radius:0 20px 20px 0;background-color: #ff7a00;">SignUp</a> </section> </li>
+
+        </div>
+
+    </header>
+
+
+ <div class="login_ui">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="login_btns"></div>
+            <button type="button" class="login_switch" onclick="login_switch()">Login</button>
+            <button type="button" class="login_switch" onclick="reg_switch()">Register</button>
+        </div>
+        <form class="login_form" id="login_form">
+            <input type="text" class="username" placeholder="Username" id="username" required>
+            <input type="password" class="password" placeholder="Password" id="password" required>
+            <input type="checkbox" class="rem_checkbox"> <span>Remember Me</span>
+            <button type="submit" class="login_submit">Login</button>
+        </form>
+
+        <form class="reg_form" id="reg_form">
+            <input type="text" class="username" placeholder="Username" id="username" required>
+            <input type="email" class="email" placeholder="Email" id="email" required>
+            <input type="password" class="password" placeholder="Password" id="password" required>
+            <input type="checkbox" class="rem_checkbox" required> <span>I agree to Terms and conditions</span>
+            <button type="submit" class="login_submit">Register</button>
+        </form>
+
+    </div>
+</div>
+
+<script>
+
+
+</script>
+
+<!--FOOTER BAR -->
+<div class="footer">
+    Exam Management System 2023 &copy;
+</div>
+<!--DONT WRITE ANYTHING BELOW -->
+<script type="text/javascript" id="jsfile" src="script.js"></script>
+</body>
+</html>
