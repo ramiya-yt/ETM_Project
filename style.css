@@ -8,8 +8,8 @@
   body {
     height: 100vh;
     background-color: #000 ;
-    background-image: url('https://i.imgur.com/i4nLfRA.jpg');
-    /*background-image: url('bg1_pc.jpg');*/
+    background-image: url('https://i.imgur.com/i4nLfRA.jpg'); 
+    /* background-image: url('img/tbg3.gif'); */
     background-size: cover;
     background-position: center;
   }
@@ -81,7 +81,7 @@
   }
 
    .action_btn{
-    background-color: rgb(0, 157, 255);
+    background-color: #009dff;
     color: #fff;
     padding: 0.5rem 2rem;
     border: none;
@@ -122,6 +122,7 @@
 
   .dropdown_menu.open{
     height: 240px;
+    z-index:3
   }
 
   .dropdown_menu li{
@@ -136,6 +137,13 @@
     display: flex;
     justify-content: center;
   }
+
+
+
+
+
+
+
 
   /* Responsive Sizes */
   @media(max-width:992px){
