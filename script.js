@@ -11,3 +11,20 @@ toggleBtn.onclick = function (){
     : 'fa-solid fa-bars'
 
 }
+
+var loginbtn = document.getElementById("login_form");
+var regbtn = document.getElementById("reg_form");
+var btnswitch = document.getElementById("login_btns");
+
+
+function reg_switch(){
+    loginbtn.style.left = "-400px";
+    regbtn.style.left = "50px";
+    btnswitch.style.left = "110px";
+}
+
+function login_switch(){
+    loginbtn.style.left = "50px";
+    regbtn.style.left = "450px";
+    btnswitch.style.left = "0";
+}
