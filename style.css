@@ -9,10 +9,17 @@
     height: 100vh;
     background-color: #000 ;
     background-image: url('https://i.imgur.com/i4nLfRA.jpg'); 
-    /* background-image: url('img/tbg3.gif'); */
     background-size: cover;
     background-position: center;
   }
+
+  .logo #logo-image {
+  /*  width: 100px;  Example width */
+    height: 90px; 
+    position: relative;
+    top: 10pt;
+  }
+  
 
   .footer {
     position: fixed;
@@ -152,7 +159,7 @@
       display: none;
     }
 
-    .navbar .logo .logoimg{
+    .navbar .logo #logo-image{
       height:85px;
     }
 
