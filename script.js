@@ -28,3 +28,6 @@ function login_switch(){
     regbtn.style.left = "450px";
     btnswitch.style.left = "0";
 }
+
+//Top Left Logo
+document.getElementById('logo-image').src = 'https://i.imgur.com/frY3DFk.png';
