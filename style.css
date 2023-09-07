@@ -19,6 +19,19 @@
     position: relative;
     top: 10pt;
   }
+
+  .account_name{
+    background-color: #009dff;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 20px 0 20px 0;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
   
 
   .footer {
@@ -145,17 +158,43 @@
     justify-content: center;
   }
 
+  section.bg4db{
 
+    background-color: rgba(255, 255, 255,0.3);
+    backdrop-filter: blur(1px);
+    border-radius: 15px;
+    position: relative;
+    height: auto;
+    display: block;
+    padding: 40px;
+    margin: 60px;
+    }
 
+    span.db_dir{
+      font-size: 12px;
+      font-weight: 100;
+      color: rgb(255, 255, 255);
+      font-style: italic;
+      letter-spacing: 2px;
+    }
 
-
+    span.db_title{
+      font-size: 2em;
+      font-weight: bold;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      text-decoration: underline;
+      letter-spacing: 1px;
+    }
 
 
 
   /* Responsive Sizes */
   @media(max-width:992px){
     .navbar .links,
-    .navbar .action_btn{
+    .navbar .action_btn,
+    .navbar .account_name{
       display: none;
     }
 
@@ -176,13 +215,55 @@
     }
   }
 
+  @media(max-width:700px){
+    section.bg4db{
+        padding: 40px;
+        margin: 30px;
+        margin-top: 50px;
+        }
+     
+  }
+
     /* Used for mobile */
   
-  @media(max-width:400px){
+  @media(max-width:450px){
     .dropdown_menu{
       left: 2rem;
       width: unset;
     }
 
+    section.bg4db{
+      margin: 12px;
+      margin-top: 50px;
+      }
+
+      span.db_title{
+        font-size: 1.7em;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        letter-spacing: 1px;
+      }
+
   }
+  @media(max-width:370px){
+    span.db_title{
+      letter-spacing: 0;}
+  }
+  /* Animations */
   
+  @keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #009dff; /* Initial glow color and size */
+    }
+    50% {
+        text-shadow: 0 0 20px #009dff; /* Peak glow color and size */
+    }
+    100% {
+        text-shadow: 0 0 5px #009dff; /* Return to the initial glow */
+    }
+}
+
+.glowing-text {
+    animation: glow 2s infinite; /* 2s animation duration, infinite loop */
+}
