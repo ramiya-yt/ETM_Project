@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background-color: #000 ;
+    background-image: url('https://i.imgur.com/i4nLfRA.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+
+  .logo #logo-image {
+  /*  width: 100px;  Example width */
+    height: 90px; 
+    position: relative;
+    top: 10pt;
+  }
+
+  .account_name{
+    background-color: #009dff;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 20px 0 20px 0;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(2, 3, 29, 0.589);
+    color: #fff;
+    padding: 4px 0;
+    opacity: 0.5;
+    font-size: 9px;
+}
+
+  li{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  a:hover{
+    color: rgb(0, 157, 255);
+
+  }
+
+  /* Header */
+
+  header{
+    position: relative;
+    padding: 0 2rem;
+   
+
+  }
+
+  .navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 10pt;
+  }
+
+  .navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar .links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+
+   .action_btn{
+    background-color: #009dff;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 20px 0 20px 0;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .action_btn:hover{
+    scale: 1.05;
+    color: #ffffff;
+    background-color: #3dbafe;
+    
+  }
+
+  .action_btn:active{
+    scale: 0.95;
+  }
+
+  /* Dropdown Menu */
+  .dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 90px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    ;
+  }
+
+  .dropdown_menu.open{
+    height: 240px;
+    z-index:3
+  }
+
+  .dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  section.bg4db{
+
+    background-color: rgba(255, 255, 255,0.3);
+    backdrop-filter: blur(1px);
+    border-radius: 15px;
+    position: relative;
+    height: auto;
+    display: block;
+    padding: 40px;
+    margin: 60px;
+    }
+
+    span.db_dir{
+      font-size: 12px;
+      font-weight: 100;
+      color: rgb(255, 255, 255);
+      font-style: italic;
+      letter-spacing: 2px;
+    }
+
+    span.db_title{
+      font-size: 2em;
+      font-weight: bold;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      text-decoration: underline;
+      letter-spacing: 1px;
+    }
+
+
+
+  /* Responsive Sizes */
+  @media(max-width:992px){
+    .navbar .links,
+    .navbar .action_btn,
+    .navbar .account_name{
+      display: none;
+    }
+
+    .navbar .logo #logo-image{
+      height:85px;
+    }
+
+    .navbar .toggle_btn{
+      display: block;
+    }
+
+    .dropdown_menu{
+      display: block;
+    }
+
+    .logins {
+      display: inherit;
+    }
+  }
+
+  @media(max-width:700px){
+    section.bg4db{
+        padding: 40px;
+        margin: 30px;
+        margin-top: 50px;
+        }
+     
+  }
+
+    /* Used for mobile */
+  
+  @media(max-width:450px){
+    .dropdown_menu{
+      left: 2rem;
+      width: unset;
+    }
+
+    section.bg4db{
+      margin: 12px;
+      margin-top: 50px;
+      }
+
+      span.db_title{
+        font-size: 1.7em;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        letter-spacing: 1px;
+      }
+
+  }
+  @media(max-width:370px){
+    span.db_title{
+      letter-spacing: 0;}
+  }
+  /* Animations */
+  
+  @keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #009dff; /* Initial glow color and size */
+    }
+    50% {
+        text-shadow: 0 0 20px #009dff; /* Peak glow color and size */
+    }
+    100% {
+        text-shadow: 0 0 5px #009dff; /* Return to the initial glow */
+    }
+}
+
+.glowing-text {
+    animation: glow 2s infinite; /* 2s animation duration, infinite loop */
+}

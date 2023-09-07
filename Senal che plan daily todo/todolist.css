@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.todoapp{
+    width: 100%;
+    background-color: rgba(140, 199, 255, 0.6);
+    margin: 40px auto 20px;
+    padding: 40px 95px;
+    border-radius: 42px;
+}
+.todo h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todoapp h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+@media(min-width:800px){
+    #list-container li::before{
+    left: 128px;}
+}
+
+@media(max-width:799px){
+    #list-container li::before{
+    left: 97px;}
+}
+
+@media(max-width:500px){
+    .todoapp{
+        padding: 40px 15px;
+      }
+
+    .todoapp h2 {
+        margin: 1px -32px 9px -38px;
+
+      }
+
+      .todoapp h2 img {
+        width: 30px;
+        margin-left: 10px;
+        position: absolute;
+        right: 69px;
+    }
+
+    #list-container li::before{
+        left: 65px;
+
+    }
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#list-container li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+#list-container li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+#list-container li.checked::before{
+    background-image: url(img/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+
+}
+
+.todoapp .task_head{
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+/*
+.todoapp .task_head::before {
+    content: "*";  Unicode code point for a star symbol 
+    margin-right: 5px;
+    color: gold;
+    position: initial;
+}*/
+
+
+.todoapp .task_des{
+    opacity: 90%;
+    padding-left: 20px;
+    padding-top: 5px;
+    
+}
+
+    /* Used for mobile */
+  
+    
