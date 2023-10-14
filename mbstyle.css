@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  
+  body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(7, 7, 7);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header {
+    width: 100%;
+    height: 95%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px -8px #004;  
+  }
+  header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('') no-repeat center ; 
+    opacity: .6;
+    z-index: -1;
+  }
+  header::after{
+    content: '';
+    position: top;
+    left: -50px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #000);
+    z-index: -1;
+  }
+  header video{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 93%;  
+    z-index: -1;
+    border-radius: 20px;
+  }
+  header nav{
+    width: 95%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px; 
+  }
+
+  header nav .logo_ul menu{
+    display: flex; 
+    flex-direction: row; 
+    list-style: none;
+  }
+  header nav .logo_ul menu .menu-item { 
+    flex: 1;
+    text-align: center; 
+} 
+  @media (max-width: 600px) { 
+    .menu { 
+       flex-direction: column; 
+    } 
+    .menu-item { 
+       flex: none; 
+       height: 100%; 
+    } 
+}
+
+  header nav .logo_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  header nav .logo_ul img {
+    width: 90px;
+}
+  header nav .logo_ul ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+  header nav .logo_ul ul li{
+    
+    padding: 3px 15px;
+}
+  header nav .logo_ul ul li a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    transition: .3s linear;
+}
+  header nav .logo_ul ul li a:hover{
+    color: rgb(255, 255, 255, .7);
+}
+  header .content{
+    position: center;
+    color: #fff;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;   
+}
+  header .content h1{
+    font-size: 60px;
+    padding: 3px;
+}
+  header .content p{
+    font-size: 14px;
+    width: 300px;
+    height: auto;
+    word-break: normal;
+    margin-top: -10px;
+
+}
+
+  header .content .details{
+    
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+  header .content .details h6{
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+  header .content .details h5{
+    color: rgb(145 , 230, 48);
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+  header .content .details h4{
+    color: #fff;
+    font-size: 10px;
+    margin-right: 10px;
+}
+  header .content .details h3{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+  header .content .details h3 span{
+    
+    color: #000;
+    padding: 0px 3px;
+    margin: 0px 5px 0px 5px;
+    font-weight: 500;
+}
+
+  header .content .details h3 i{
+    margin-right: 5px;
+}
+  .test1{
+    float: left;
+    background-color: red;
+    display: flex;
+    color: #fff;
+    box-sizing: border-box;
+ }
+
+.test1{
+
+    background-color: red;
+    color: white;
+
+}
+
+
+
+
+
